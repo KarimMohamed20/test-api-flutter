@@ -12,7 +12,7 @@ class _LoginPageState extends State<LoginPage> {
 
   void getDataFromAPI() async {
     var response =
-        await http.post('http://localhost:3000/login',
+        await http.post('https://test-api-flutter-100.herokuapp.com/login',
         body: {
           "name":name.text
         });
